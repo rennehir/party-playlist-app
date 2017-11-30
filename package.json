@@ -13,8 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.17.1",
+    "firebase": "^4.6.2",
     "jquery": "^3.2.1",
     "nuxt": "^1.0.0-rc11",
+    "toastr": "^2.1.2",
     "webpack": "^3.9.0"
   },
   "devDependencies": {

@@ -10,7 +10,7 @@
           <nuxt-link to="/request">Request</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/">DJ</nuxt-link>
+          <nuxt-link to="/playlist-manager">DJ</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/">Playlist</nuxt-link>

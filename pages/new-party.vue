@@ -38,8 +38,13 @@
 </template>
 
 <script>
+  import Logo from '@/components/Logo'
+
   export default {
     name: 'new-party',
+    components: {
+      Logo
+    },
     data () {
       return {}
     }
