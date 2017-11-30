@@ -12,3 +12,6 @@ dist
 
 # IDE realted stuff
 .idea
+
+# Environment variables
+.env.js
