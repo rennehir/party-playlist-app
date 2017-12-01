@@ -10,8 +10,9 @@ npm-debug.log
 # Nuxt generate
 dist
 
-# IDE realted stuff
+# IDE related stuff
 .idea
 
 # Environment variables
-.env.js
+.env
+service-account.json

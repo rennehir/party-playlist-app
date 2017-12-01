@@ -36,10 +36,6 @@
 </template>
 
 <script>
-  import axios from 'axios'
-  import toastr from 'toastr'
-  import firebase from '../services/fireinit'
-
   export default {
     data () {
       return {
@@ -48,39 +44,6 @@
       }
     },
     methods: {
-      search () {
-        let items = []
-        axios.get('https://junction17-spotify-proxy.herokuapp.com/api/search?q=' + this.searchTerm + '&type=track')
-          .then(function (response) {
-            let tracks = response.data.tracks.items
-            for (let i = 0; i < tracks.length; i++) {
-              items.push(tracks[i])
-            }
-          })
-          .catch(function (error) {
-            console.log(error)
-          })
-        this.songs = items
-      },
-      samba () {
-        this.searchTerm = ''
-        let items = []
-        axios.get('https://junction17-spotify-proxy.herokuapp.com/api/search?q=samba%20de%20janeiro&type=track')
-          .then(function (response) {
-            let tracks = response.data.tracks.items
-            for (let i = 0; i < tracks.length; i++) {
-              items.push(tracks[i])
-            }
-          })
-          .catch(function (error) {
-            console.log(error)
-          })
-        this.songs = items
-      },
-      requestSong (song) {
-        firebase.database().ref('requested').push(song)
-        toastr.success('Well done! You have successfully requested a song. Keep up the good samba! ;-)')
-      }
     }
   }
 </script>

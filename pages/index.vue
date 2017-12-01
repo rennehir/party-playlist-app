@@ -11,8 +11,7 @@
         Make your parties collaborative
       </h2>
       <div>
-        <a class="button button--green" href="https://junction17-spotify-proxy.herokuapp.com/login" target="_blank">Login</a>
-        <nuxt-link class="button button--white" to="/new-party">New party</nuxt-link>
+        <login></login>
       </div>
     </div>
     <div class="content-wrapper">
@@ -38,10 +37,12 @@
 
 <script>
   import Logo from '~/components/Logo.vue'
+  import Login from '~/components/Login.vue'
 
   export default {
     components: {
-      Logo
+      Logo,
+      Login
     }
   }
 </script>

@@ -1,6 +1,10 @@
 {
   "rules": {
-    ".read": "true",
-    ".write": "true"
+    "spotifyAccessToken": {
+      "$uid": {
+        ".read": "auth.uid === $uid",
+        ".write": "auth.uid === $uid"
+      }
+    }
   }
 }
