@@ -43,18 +43,13 @@ module.exports = {
       }
     }
   },
-  env: {
-    apiKey: process.env.API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    databaseURL: process.env.DB_URL,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MSG_SENDER_ID
-  },
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/axios',
     '@nuxtjs/proxy'
+  ],
+  plugins: [
+    { src: '~plugins/firebase', ssr: false }
   ],
   proxy: [
     ['/api', { target: process.env.PROXY_API_URL || 'https://accounts.spotify.com' }]

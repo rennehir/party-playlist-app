@@ -10,7 +10,7 @@
       </h2>
       <div class="links">
         <a class="button--green" href="https://junction17-spotify-proxy.herokuapp.com/login" target="_blank">Login</a>
-        <nuxt-link class="button--grey" to="/new-party">New party</nuxt-link>
+        <button class="button button--red">Push something</button>
       </div>
       <div class="">
         <h3>Welcome to use our Spotify API powered party music list!</h3>

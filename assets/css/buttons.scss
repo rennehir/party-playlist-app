@@ -1,3 +1,5 @@
+@import "variables";
+
 .button {
   display: inline-block;
   font-size: 1rem;
@@ -28,18 +30,18 @@
 }
 .button--white:hover {
   border: 2px solid #000;
-  background-color: #84bd00;
+  background-color: $malachite;
   color: #000;
 }
 .button--green {
-  border: 2px solid #84bd00;
+  border: 2px solid $malachite;
   background-color: transparent;
-  color: #fff;
+  color: $white;
 }
 .button--green:hover {
-  border: 2px solid #000;
-  background-color: #84bd00;
-  color: #000;
+  border: 2px solid $malachite;
+  background-color: $malachite;
+  color: $white;
 }
 .button--red {
   border: 2px solid #c4000e;

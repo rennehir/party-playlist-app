@@ -5,6 +5,10 @@
         ".read": "auth.uid === $uid",
         ".write": "auth.uid === $uid"
       }
+    },
+    "parties": {
+      ".read": "true",
+      ".write": "true"
     }
   }
 }
